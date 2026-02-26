@@ -1,2 +1,35 @@
-# AlgorithmsDataStructures-highwayproject
-Command-driven highway route planner in C. Models stations and vehicle ranges as a dynamic graph and uses BFS to compute minimum-stop routes with deterministic tie-breaking and efficient state management.
+# Highway Route Planner in C
+
+## Project Summary
+
+Designed and implemented a command-driven highway route planning system in C as part of an Algorithms and Data Structures final project.
+
+The system models service stations positioned along a highway, each managing a fleet of electric vehicles with different driving ranges. The core objective is to compute the optimal route between two stations under strict movement and tie-breaking constraints.
+
+---
+
+## Key Features
+
+- Dynamic management of service stations (add/remove)
+- Fleet management per station (add/remove vehicles)
+- Efficient route planning between stations
+- Deterministic tie-breaking for equal-length optimal paths
+- Fully command-driven architecture via standard input
+
+---
+
+## Technical Highlights
+
+- Modeled the problem as a directed graph:
+  - Stations → Nodes
+  - Reachable stations (based on vehicle autonomy) → Edges
+- Implemented a BFS-based traversal to guarantee:
+  - Minimum number of stops
+  - Lexicographically minimal solution in case of ties
+- Managed constrained resources (max 512 vehicles per station)
+- Handled 32-bit integer distance values
+- Ensured deterministic and efficient behavior under dynamic updates
+
+---
+
+## Example Command
