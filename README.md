@@ -34,7 +34,8 @@ The system models service stations positioned along a highway, each managing a f
 
 ## Example Command
 - pianifica-percorso distanza-stazione-partenza distanza-stazione-arrivo
-  translated would be: plan-route <start-station-distance> <end-station-distance>
+
+translated would be: plan-route <start-station-distance> <end-station-distance>
 
 Outputs:
 - The optimal sequence of stations
