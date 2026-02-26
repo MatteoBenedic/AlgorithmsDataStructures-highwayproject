@@ -33,3 +33,17 @@ The system models service stations positioned along a highway, each managing a f
 ---
 
 ## Example Command
+- pianifica-percorso distanza-stazione-partenza distanza-stazione-arrivo
+  translated would be: plan-route <start-station-distance> <end-station-distance>
+
+Outputs:
+- The optimal sequence of stations
+- `no route` if unreachable
+
+---
+
+## Build & Run
+
+```bash
+gcc main.c -o route_planner
+./route_planner < input.txt
